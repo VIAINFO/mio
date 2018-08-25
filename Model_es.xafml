@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="Plataforma">
+        <Items>
+          <Item Id="Resume_ListView" Caption="Entrega" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="ENC_ENTREGA_DetailView" Caption="Datos Entrega">
+      <Items>
+        <PropertyEditor Id="Address1" Caption="Rut" />
+        <PropertyEditor Id="Address2" Caption="Nombre" />
+        <PropertyEditor Id="Photo" Caption="Imagen" />
+      </Items>
+    </DetailView>
+    <ListView Id="ENC_ENTREGA_ListView" Caption="Lista Entrega" />
+    <ListView Id="ENC_ENTREGA_LookupListView" Caption="Entrega" />
+    <DetailView Id="ENC_ENTREGAS_DetailView">
+      <Items>
+        <PropertyEditor Id="Photo" Caption="Imagen" />
+        <PropertyEditor Id="RECIBE" Caption="Recibe" />
+        <PropertyEditor Id="RUT" Caption="Rut" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Photo_Group" Caption="Photo" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
